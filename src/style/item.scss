@@ -1,0 +1,85 @@
+.item {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+
+	width: 33%;
+	min-width: $unit * 7;
+	padding: ($unit / 2);
+
+	color: $color-print;
+
+	.about &, &.about {
+		color: $color-print-about;
+
+		h3 {
+			border-color: $color-print-about;
+		}
+	}
+	&.art {
+		color: $color-print-art;
+
+		h3 {
+			border-color: $color-print-art;
+		}
+	}
+	&.bots {
+		color: $color-print-bots;
+
+		h3 {
+			border-color: $color-print-bots;
+		}
+	}
+	&.cli {
+		color: $color-print-cli;
+
+		h3 {
+			border-color: $color-print-cli;
+		}
+	}
+	&.elsewhere {
+		color: $color-print-elsewhere;
+
+		h3 {
+			border-color: $color-print-elsewhere;
+		}
+	}
+
+	.twitter {
+		text-decoration: line-through;
+	}
+
+	h2 {
+		margin: $unit/2 0 $unit/4;
+		font-family: "Tofino Pro Personal Wide";
+		font-weight: 800;
+	}
+
+	h3 {
+		padding-bottom: 0.5rem;
+		border-bottom: solid $color-print $unit * .104166667;
+		font-family: "Tofino Pro Personal Narrow";
+		text-transform: uppercase;
+	}
+
+	img {
+		width: 100%;
+		margin: $unit / 4 0;
+	}
+
+	p {
+		font-family: "Tofino Pro Personal";
+		font-size: 1.0rem;
+		font-weight: 400;
+		line-height: 1.65;
+
+		& + p {
+			margin-top: $unit / 4;
+		}
+	}
+
+	a {
+		color: inherit;
+		font-weight: 700;
+	}
+}
