@@ -1,13 +1,26 @@
 .item {
+	position: relative;
+
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: top;
 
-	width: 33%;
-	min-width: $unit * 7;
+	width: 100%;
+	min-width: $item-width;
 	padding: ($unit / 2);
 
+	@media screen and (min-width: 724px) {
+		width: 33%;
+	}
+
 	color: $color-print;
+
+	.fill {
+		box-sizing: border-box;
+		height: $item-width;
+		width: 100%;
+		max-width: $item-width;
+	}
 
 	.about &, &.about {
 		color: $color-print-about;
@@ -28,6 +41,14 @@
 
 		h3 {
 			border-color: $color-print-bots;
+		}
+
+		&.retired {
+			color: $color-print-bots-retired;
+
+			h3 {
+				border-color: $color-print-bots-retired;
+			}
 		}
 	}
 	&.cli {

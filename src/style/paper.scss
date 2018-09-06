@@ -1,14 +1,22 @@
 body {
 	margin: 0;
 	padding: $unit/2 0 $unit $unit;
-
 	background-color: $color-background;
+
+	@media screen and (max-width: 768px) {
+		padding: $small-unit 0 $small-unit $small-unit;
+	}
 }
 
 .paper {
+	position: relative;
 	box-sizing: border-box;
+
+	margin: 0 auto;
 	padding: $unit / 2;
 	background-color: $color-paper;
+	width: 100%;
+	max-width: 2.2 * $item-width;
 
 	box-shadow:
 		-$shadow-size $shadow-size 0 $color-paper-shadow,
@@ -42,5 +50,13 @@ body {
 		display: block;
 		background: $dark-gray;
 		height: $unit;
+	}
+
+	& + & {
+		margin-top: $unit;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: $small-unit / 2;
 	}
 }

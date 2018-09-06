@@ -1,15 +1,19 @@
 @import '_colors';
 
 $unit: 3.0rem;
+$small-unit: 1.5rem;
 
 $shadow-size: $unit / 4;
+
+$item-width: $unit * 7;
 
 $color-background: $pink;
 $color-paper-shadow: $hot-pink;
 $color-paper: $washed-yellow;
-$color-print: $blue;
+$color-print: $dark-green;
 $color-print-about: $navy;
-$color-print-art: $dark-green;
-$color-print-bots: $dark-pink;
+$color-print-art: $purple;
+$color-print-bots: $dark-green;
+$color-print-bots-retired: $color-print-bots;
 $color-print-cli: $dark-blue;
 $color-print-elsewhere: $color-print;
