@@ -46,10 +46,8 @@ body {
 		-24px 24px 0 $color-paper-shadow,
 		;
 
-	header {
-		display: block;
-		background: $dark-gray;
-		height: $unit;
+	img {
+		width: 100%;
 	}
 
 	& + & {

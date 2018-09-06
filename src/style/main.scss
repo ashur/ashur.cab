@@ -1,8 +1,8 @@
-@import '_variables';
-@import '_reset';
-@import 'fonts';
-@import 'item';
-@import 'paper';
+@import 'global/_variables';
+@import 'global/_reset';
+@import 'global/fonts';
+
+@import 'paper/_main';
 
 body {
 	font-size: 16px;
