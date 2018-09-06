@@ -5,16 +5,16 @@ const sass = require( 'gulp-sass' );
 const serve = require( 'gulp-serve' );
 
 /* HTML */
-gulp.task( 'html', () =>
+gulp.task( 'contents', () =>
 {
-	return gulp.src('./src/html/*.html' )
+	return gulp.src('./src/html/**/*.*' )
 	    .pipe( gulp.dest( './dist' ) );
 });
 
 /* Style */
 gulp.task( 'style', () =>
 {
-	return gulp.src('./src/style/main.scss' )
+	return gulp.src('./src/style/**/main.scss' )
 	    .pipe( sass().on( 'error', sass.logError ) )
 	    .pipe( gulp.dest( './dist' ) );
 });
@@ -32,7 +32,7 @@ gulp.task( 'build:prod', ['html', 'style:prod'] );
 /* Watch */
 gulp.task( 'watch', () =>
 {
-	gulp.watch( 'src/html/*.html', ['html'] );
+	gulp.watch( 'src/html/**/*.*',  ['contents'] );
 	gulp.watch( 'src/style/**/*.scss', ['style'] );
 });
 
