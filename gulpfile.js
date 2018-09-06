@@ -20,14 +20,14 @@ gulp.task( 'style', () =>
 });
 gulp.task( 'style:prod', () =>
 {
-	return gulp.src('./src/style/main.scss' )
+	return gulp.src('./src/style/**/main.scss' )
 	    .pipe( sass({ outputStyle: 'compressed' }).on( 'error', sass.logError ) )
 	    .pipe( gulp.dest( './dist' ) );
 });
 
 /* Build */
-gulp.task( 'build', ['html','style'] );
-gulp.task( 'build:prod', ['html', 'style:prod'] );
+gulp.task( 'build', ['contents','style'] );
+gulp.task( 'build:prod', ['contents', 'style:prod'] );
 
 /* Watch */
 gulp.task( 'watch', () =>
