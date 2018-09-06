@@ -1,0 +1,9 @@
+body {
+	background-color: $color-background;
+}
+
+.paper {
+	background-color: $color-paper;
+	
+	@include shadow( $shadow-size, $color-paper-shadow );
+}

@@ -2,5 +2,7 @@
 @import '../global/_reset';
 @import '../global/fonts';
 
-@import '_variables';
 @import '../paper/_main';
+
+@import '_variables';
+@import 'paper';
