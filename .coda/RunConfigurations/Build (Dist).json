@@ -1,0 +1,7 @@
+{
+  "script" : "#!\/bin\/sh\n\/usr\/bin\/env npm rebuild node-sass\n\/usr\/bin\/env npm run build-dist",
+  "environment" : {
+    "PATH" : "\/usr\/local\/bin:\/usr\/bin:\/bin:\/usr\/sbin",
+    "SITE_SERVER" : "localhost"
+  }
+}

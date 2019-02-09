@@ -1,0 +1,4 @@
+{
+  "script" : "#!\/bin\/sh\nexport $(grep -v '^#' .env | xargs -0)\n\n\/usr\/local\/bin\/aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths \/rera\/*\n",
+  "identifier" : "108DFE88-71D4-4AEB-9D3E-3FB8549D1571"
+}
