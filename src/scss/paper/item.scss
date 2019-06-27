@@ -100,4 +100,12 @@
 		color: inherit;
 		font-weight: 700;
 	}
+
+	img {
+		$shadow-depth: $unit * .104166667;
+		margin-top: ($unit / 2);
+		border: solid $light-yellow 0px;
+		border-left-width: $shadow-depth;
+		border-bottom-width: $shadow-depth;
+	}
 }
