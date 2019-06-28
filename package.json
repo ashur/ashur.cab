@@ -9,7 +9,7 @@
     "build-js": "browserify src/js/main.js -o dist/main.js -t [ babelify --presets [ @babel/preset-env ] ]",
     "build-js-dist": "browserify -g uglifyify src/js/main.js -o dist/main.js -t [ babelify --presets [ @babel/preset-env ] ]",
     "build-scss": "node-sass --output-style compressed -o dist src/scss/main.scss",
-    "clean": "rm -r dist && mkdir dist",
+    "clean": "rm -rf dist && mkdir dist",
     "serve": "serve -l tcp://$SITE_SERVER:5000 dist",
     "start": "npm run build-dev && concurrently -n watch,serve \"npm:watch\" \"npm:serve\"",
     "watch-html": "onchange 'src/html/**/*.html' -- npm run build-html",
