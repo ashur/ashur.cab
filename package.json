@@ -4,7 +4,7 @@
   "scripts": {
     "build-dev": "npm run build-html && npm run build-images && npm run build-scss",
     "build-dist": "npm run clean && npm run build-html && npm run build-scss && npm run build-images",
-    "build-html": "cp -R src/html/ dist/",
+    "build-html": "cp -R src/html/* dist",
     "build-images": "cp -R src/images/ dist/images",
     "build-js": "browserify src/js/main.js -o dist/main.js -t [ babelify --presets [ @babel/preset-env ] ]",
     "build-js-dist": "browserify -g uglifyify src/js/main.js -o dist/main.js -t [ babelify --presets [ @babel/preset-env ] ]",
