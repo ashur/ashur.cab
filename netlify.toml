@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/"
+  to = "/rera"
+  status = 302
+  force = true
