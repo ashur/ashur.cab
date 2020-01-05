@@ -20,15 +20,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "babelify": "^10.0.0",
     "browserify": "^13.0.1",
     "chai": "^4.2.0",
-    "concurrently": "^4.0.1",
-    "node-sass": "^4.9.3",
+    "concurrently": "^4.1.2",
+    "node-sass": "^4.13.0",
     "onchange": "^4.1.0",
     "serve": "^10.1.2",
-    "uglifyify": "^5.0.1"
+    "uglifyify": "^5.0.2"
   }
 }
