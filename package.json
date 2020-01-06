@@ -2,7 +2,7 @@
   "name": "ashur.cab",
   "author": "Ashur Cabrera <hello@ashur.cab>",
   "scripts": {
-    "build-dev": "npm run build-html && npm run build-images && npm run build-scss",
+    "build-dev": "npm run clean && npm run build-html && npm run build-images && npm run build-scss",
     "build-dist": "npm run clean && npm run build-html && npm run build-scss && npm run build-images",
     "build-html": "cp -R src/html/* dist/rera",
     "build-images": "cp -R src/images/ dist/rera/images",
