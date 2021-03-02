@@ -1,8 +1,0 @@
-{
-  "script" : "#!\/bin\/sh\n\/usr\/bin\/env npm run start",
-  "environment" : {
-    "PATH" : "\/usr\/local\/bin:\/usr\/bin:\/bin:\/usr\/sbin",
-    "SITE_SERVER" : "localhost"
-  },
-  "identifier" : "76B57501-96D6-416F-8C29-0B93211169A9"
-}
