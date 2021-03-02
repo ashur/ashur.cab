@@ -1,5 +1,9 @@
 {% set critical %}
 .tile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	padding: clamp( var( --s2 ), 10vw, var( --s6 ) );
 	font-size: clamp( calc( var( --s1) + 0.1rem ), 5vw, var( --s4 ) );
 	font-weight: 700;
