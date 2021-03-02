@@ -1,0 +1,9 @@
+{% set critical %}
+.tiles > * {
+	min-height: 25vh;
+	/* grid-template-rows: repeat(
+		5,
+		minmax( 20vh, 1fr )
+	); */
+}
+{% endset %}

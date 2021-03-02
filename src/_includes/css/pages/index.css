@@ -1,0 +1,9 @@
+{% set critical %}
+{% endset %}
+
+.pronounce {
+	cursor: pointer;
+	background-image: url(/images/wavy.svg);
+	background-repeat: repeat-x;
+	background-position: 0 bottom;
+}

@@ -1,0 +1,13 @@
+---
+# This template generates external stylesheets
+# using files defined in src/_includes/css/pages
+
+pagination:
+  data: stylesheets
+  size: 1
+  alias: filename
+permalink: "/css/{{ filename | slug }}"
+---
+{%- set path = "css/pages/" + filename %}
+{%- set stylesheet %}{% include path %}{% endset %}
+{{- stylesheet | cssmin -}}

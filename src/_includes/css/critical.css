@@ -1,0 +1,10 @@
+{% include "css/reset.css" %}
+{% include "css/fonts.css" %}
+{% include "css/global.css" %}
+{% include "css/composition.css" %}
+{% include "css/utilities.css" %}
+
+/* Blocks */
+{% include "css/blocks/contents.css" %}
+{% include "css/blocks/header.css" %}
+{% include "css/blocks/footer.css" %}

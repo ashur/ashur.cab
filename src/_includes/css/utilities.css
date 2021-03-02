@@ -1,0 +1,49 @@
+/* Tokens: Colors */
+{% for key in tokens.colors | keys %}
+.bg-{{ key }} {
+	background-color: var( --color-{{key}} );
+}
+.color-{{ key }} {
+	color: var( --color-{{key}} );
+}
+{% endfor %}
+
+{%- for theme in tokens.themes | keys %}
+.theme-{{ theme }} {
+	--theme-background: var( --theme-{{ theme }}-background );
+	--theme-text: var( --theme-{{ theme }}-text );
+
+	background-color: var( --theme-{{ theme }}-background );
+	color: var( --theme-{{ theme }}-text );
+}
+{%- endfor %}
+
+.bold {
+	font-weight: bold;
+}
+
+.flex {
+	display: flex;
+}
+
+.grid {
+	display: grid;
+}
+
+.measure {
+	max-width: var( --measure );
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+{% for p in [-5,-4,-3,-2,-1,0,1,2,3,4,5] %}
+.padding-{{ p }} {
+	padding: var( --s{{p}} );
+}
+{% endfor %}
+
+.text-center {
+	text-align: center;
+}

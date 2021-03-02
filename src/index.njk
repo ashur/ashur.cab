@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+critical:
+  - css/blocks/tiles.css
+  - css/blocks/tile.css
+  - css/pages/index.css
+external:
+  - index.css
+scripts:
+  # inline:
+    - scripts/index.js
+---
+<div class="[][ grid ][ tiles ]">
+    <div class="[][ theme-site ][ tile ]">
+		<div class="[ center stack ][ measure ][]">
+			<p>
+				Howdy! My name is <span class="[][][ pronounce ]" onclick="var a=new Audio('/audio/ashur.mp3');a.play()">Ashur</span> Cabrera, and this 92-kilobyte pile of electrons is my website.
+			</p>
+	
+			{% include "images/icon-cab.svg" %}
+		</div>
+    </div>
+    
+	<div class="[][ theme-cli ][ tile ]">
+		<div class="[ center stack ][ measure ][]">
+			<p>
+	        I love to build command-line tools like <a href="https://www.npmjs.com/package/@aaashur/innie">Innie</a>, a tool that makes it easy to read, write, and delete INI file entries.
+			</p>
+
+			{% include "images/icon-terminal.svg" %}
+	    </div>
+	</div>
+
+	<div class="[][ theme-blog ][ tile ]">
+		<div class="[ center stack ][ measure ][]">
+			<p>
+				I write longer and, hopefully, more thoughtful thoughts at my journal, <a href="https://multiline.co/mment">Multiline Comment</a>.
+			</p>
+
+			{% include "images/icon-newspaper.svg" %}
+		</div>
+	</div>
+
+ 	<div class="[][ theme-twitter ][ tile ]">
+		<div class="[ center stack ][ measure ][]">
+			<p>
+		        <a href="https://twitter.com/ashur">Twitter</a> is the best place to say “Hi,” or stick around and roll your eyes at my terrible puns.
+			</p>
+
+			{% include "images/icon-twitter.svg" %}
+	    </div>
+	</div>
+</div>

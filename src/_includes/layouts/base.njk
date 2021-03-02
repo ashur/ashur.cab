@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+
+	{% for size in [16,32,96,120,152,167,180] %}
+	<link rel="icon" type="image/png" href="/images/favicon-{{ size }}x{{ size }}.png" sizes="{{ size }}x{{ size }}">
+	{% endfor %}
+	
+
+	{% set css -%}
+		{%- include "css/critical.css" -%}
+
+		{%- if critical -%}
+			{%- for path in critical -%}
+				{%- import path as stylesheet -%}
+
+				/* Imported {{ path }} */
+				{{ stylesheet.critical | safe }}
+			{%- endfor -%}
+		{%- endif -%}
+	{%- endset -%}
+	<style>
+		{{ css | cssmin | safe }}
+	</style>
+
+	{%- if external %}
+		{%- for path in external %}
+	<link rel="stylesheet" href="/css/{{ path }}" media="print" onload="this.media='all'">
+		{%- endfor %}
+	{%- endif %}
+
+</head>
+<body>
+	{{ content | safe }}
+
+	{%- if scripts.inline %}
+	<script>
+	{%- for path in scripts.inline %}
+		{% include path %}
+	{%- endfor %}
+	</script>
+	{%- endif %}
+</body>
+</html>
