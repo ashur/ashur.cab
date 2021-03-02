@@ -3,14 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
-
-	{% for size in [16,32,96,120,152,167,180] %}
+	{%- for size in [16,32,96,120,152,167,180] %}
 	<link rel="icon" type="image/png" href="/images/favicon-{{ size }}x{{ size }}.png" sizes="{{ size }}x{{ size }}">
-	{% endfor %}
-	
-
+	{%- endfor %}
 	{% set css -%}
 		{%- include "css/critical.css" -%}
 
@@ -28,11 +24,10 @@
 	</style>
 
 	{%- if external %}
-		{%- for path in external %}
+		{%- for path in external -%}
 	<link rel="stylesheet" href="/css/{{ path }}" media="print" onload="this.media='all'">
 		{%- endfor %}
 	{%- endif %}
-
 </head>
 <body>
 	{{ content | safe }}
