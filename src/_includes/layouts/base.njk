@@ -29,7 +29,9 @@
 		{%- endfor %}
 	{%- endif %}
 </head>
-<body>
+<body class="[][ theme-{{ theme if theme else "site" }} ][]">
+	{% include "components/header.njk" %}
+
 	{{ content | safe }}
 
 	{%- if scripts.inline %}
