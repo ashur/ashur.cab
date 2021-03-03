@@ -5,6 +5,10 @@
 {% include "css/utilities.css" %}
 
 /* Blocks */
-{% include "css/blocks/contents.css" %}
-{% include "css/blocks/header.css" %}
-{% include "css/blocks/footer.css" %}
+{% set blocks = [
+	"css/blocks/header.css"
+]%}
+{%- for path in blocks -%}
+	{%- import path as stylesheet -%}
+	{{- stylesheet.critical | safe -}}
+{%- endfor -%}
