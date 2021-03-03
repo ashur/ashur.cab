@@ -4,8 +4,6 @@
 }
 
 .center {
-	--center-padding: var( --page-margin );
-
 	box-sizing: content-box;
 	margin-left: auto;
 	margin-right: auto;
