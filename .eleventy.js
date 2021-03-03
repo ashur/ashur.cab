@@ -1,5 +1,6 @@
 const CleanCSS = require( "clean-css" );
 const markdownIt = require( "markdown-it" );
+const {optimize} = require( "svgo" );
 
 module.exports = config =>
 {
@@ -17,6 +18,12 @@ module.exports = config =>
 		}
 
 		return css;
+	});
+
+	config.addPairedShortcode( "svgmin", svg =>
+	{
+		let result = optimize( svg, {} );
+		return result.data;
 	});
 
 	/**
