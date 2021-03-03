@@ -1,3 +1,16 @@
-.header-title {
-
+{%- set critical -%}
+.header {
+	padding-left: var( --page-margin );
+	padding-right: var( --page-margin );
+	font-size: clamp( calc( var( --s1) + 0.1rem ), 5vw, var( --s4 ) );
 }
+
+.header-icon {
+	box-sizing: content-box;
+	width: 1em;
+	margin-left: -0.5em;
+	padding-top: 1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+{%- endset -%}

@@ -14,7 +14,7 @@
 	--s6: calc( var( --s5 ) * var( --s-ratio ) );
 
 	--measure: 22ch;
-	--page-margin: clamp( var( --s1 ), 5vw, var( --s3 ) );
+	--page-margin: clamp( var( --s2 ), 10vw, var( --s6 ) );
 
 	--font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--font-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Menlo, Monaco, "Courier New", Courier, monospace;
