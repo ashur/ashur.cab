@@ -6,10 +6,6 @@ module.exports = config =>
 	/* Copy assets */
 	config.addPassthroughCopy({"src/static": "/"});
 
-	/* Components */
-	const componentsDir = "./src/_includes/components";
-	config.addPairedShortcode( "Tile", require( `${componentsDir}/Tile.js` ) );
-
 	/* Filters */
 	config.addFilter( "cssmin", css =>
 	{
