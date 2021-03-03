@@ -13,10 +13,18 @@
 	--theme-background: var( --theme-{{ theme }}-background );
 	--theme-text: var( --theme-{{ theme }}-text );
 
-	background-color: var( --theme-{{ theme }}-background );
-	color: var( --theme-{{ theme }}-text );
+	background-color: var( --theme-background );
+	color: var( --theme-text );
+}
+.theme-{{ theme }} .theme-inverse {
+	--theme-background: var( --theme-{{ theme }}-text );
+	--theme-text: var( --theme-{{ theme }}-background );
+
+	background-color: var( --theme-background );
+	color: var( --theme-text );
 }
 {%- endfor %}
+
 
 .bold {
 	font-weight: bold;
