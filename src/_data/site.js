@@ -1,4 +1,4 @@
 module.exports = {
 	"title": "Ashur Cabrera",
-	"url": process.env.URL || "http://localhost:5000"
+	"url": process.env.DEPLOY_PRIME_URL || "http://localhost:5000"
 }
