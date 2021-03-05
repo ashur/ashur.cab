@@ -5,6 +5,7 @@ order: 2
 theme:
   text: "#fbb6ce"
   background: "black"
+  corner: "var( --color-white )"
 ---
 Beyoncé’s discography organized neatly.
 

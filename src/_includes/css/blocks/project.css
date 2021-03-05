@@ -1,4 +1,18 @@
 {%- set critical -%}
+.project {
+	position: relative;
+}
+
+.project:before {
+	content: "";
+	position: absolute;
+	top: 0; right: 0;
+	height: 1em;
+	width: 1em;
+
+	background-image: linear-gradient( 45deg, var( --theme-corner, var( --theme-text ) ) 50%, var( --theme-cli-secondary ) 50% );
+}
+
 .project h2 {
 	letter-spacing: -0.0125em;
 }

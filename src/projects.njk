@@ -18,9 +18,10 @@ permalink: /rera/projects/index.html
 
 		<div class="[ stack ][][ projects ]">
 			{% for project in collections.projects | sort( false, false, "data.order" ) %}
+			{%- set theme = project.data.theme %}
 				<div
 					class="[ box center stack ][ measure themed ][ project ]"
-					style="--theme-text: {{ project.data.theme.text }}; --theme-background: {{ project.data.theme.background }}; --theme-icon: {{ project.data.theme.text }}; "
+					style="--theme-text: {{ theme.text }}; --theme-background: {{ theme.background }}; --theme-icon: {{ theme.icon if theme.icon else theme.corner }}; {% if theme.corner %}--theme-corner: {{ theme.corner }};{% endif %}"
 				>
 					<h2><a href="{{ project.data.url }}">{{ project.data.name }}</a></h2>
 					{{ project.templateContent | safe }}
