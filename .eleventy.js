@@ -4,6 +4,9 @@ const {optimize} = require( "svgo" );
 
 module.exports = config =>
 {
+	/* Eleventy options */
+	config.setDataDeepMerge( true );
+
 	/* Copy assets */
 	config.addPassthroughCopy({"src/static": "/"});
 

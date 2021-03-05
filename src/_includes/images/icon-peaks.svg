@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 96 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mountains</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="noun_peak_2714714" transform="translate(-2.000000, 0.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(2.000000, 0.000000)">
+                <path d="M18.8,15.2 L26.7,29 L16.4,46.9 L0.5,46.9 L18.8,15.2 Z M77.2,15.2 L95.5,46.9 L79.6,46.9 L69.3,29 L77.2,15.2 Z M60.1,21.8 L74.6,46.9 L21.4,46.9 L35.9,21.8 L42.1,28.1 L48,22.2 L53.8,28.1 L60.1,21.8 Z" id="Combined-Shape" fill="var( --theme-icon )"></path>
+                <polygon id="Path" fill="var( --color-white )" points="42.1 21.9 48 16 53.8 21.9 57.8 17.9 48 0.6 38.1 17.9"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

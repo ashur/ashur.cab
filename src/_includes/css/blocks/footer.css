@@ -1,7 +1,30 @@
+{%- set critical -%}
 .pre-footer {
 	flex: 1 0 auto;
 }
 
 .footer {
+	--theme-background: var( --color-black );
+	--theme-text: var( --color-white );
+	--theme-icon: var( --theme-light );
+
+	--stack-space: var( --s0 );
 	flex-shrink: 0;
 }
+
+.footer h2 {
+	max-width: 20ch;
+	color: var( --theme-light );
+	font-size: clamp( var( --s0 ), 2.5vw, var( --s2 ) );
+}
+.footer p {
+	font-family: var( --font-sans );
+	font-size: clamp( var( --s0 ), 2.5vw, var( --s1 ) );
+}
+.footer svg {
+	--size: clamp( 1em, 2.5vw, var( --s0 ) );
+
+	width: var( --size );
+	margin-right: calc( var( --size ) / 8 );
+}
+{%- endset -%}

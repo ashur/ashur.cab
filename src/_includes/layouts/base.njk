@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+
 	{%- for size in [16,32,96,120,152,167,180] %}
 	<link rel="icon" type="image/png" href="/images/favicon-{{ size }}x{{ size }}.png" sizes="{{ size }}x{{ size }}">
 	{%- endfor %}
@@ -19,6 +21,7 @@
 			{%- endfor -%}
 		{%- endif -%}
 	{%- endset -%}
+
 	<style>
 		{{ css | cssmin | safe }}
 	</style>
@@ -33,6 +36,8 @@
 	{% include "components/header.njk" %}
 
 	{{ content | safe }}
+
+	{% include "components/footer.njk" %}
 
 	{%- if scripts.inline %}
 	<script>

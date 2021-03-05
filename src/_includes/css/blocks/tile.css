@@ -1,17 +1,11 @@
 {% set critical %}
 .tile {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	--theme-text: var( --theme-heading );
 
+	min-height: calc( (100vh - var( --s2 )) / 4 );
 	padding: clamp( var( --s2 ), 10vw, var( --s6 ) );
-	font-size: clamp( calc( var( --s1) + 0.1rem ), 5vw, var( --s4 ) );
 	font-weight: 700;
 }
-	.tile p {	
-		letter-spacing: -0.00125em;
-		line-height: 1.2;
-	}
 	.tile svg {
 		width: 1em;
 	}

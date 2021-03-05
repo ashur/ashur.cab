@@ -6,9 +6,12 @@
 
 /* Blocks */
 {% set blocks = [
-	"css/blocks/header.css"
+	"css/blocks/header.css",
+	"css/blocks/page.css",
+	"css/blocks/footer.css"
 ]%}
 {%- for path in blocks -%}
 	{%- import path as stylesheet -%}
 	{{- stylesheet.critical | safe -}}
+	{{ ("Added " + path + " to critical CSS") | log }}
 {%- endfor -%}

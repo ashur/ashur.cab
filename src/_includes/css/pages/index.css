@@ -1,2 +1,6 @@
 {%- set critical -%}
+.tiles > *:nth-child(1) {
+	padding-top: 0;
+	justify-content: flex-start;
+}
 {%- endset -%}

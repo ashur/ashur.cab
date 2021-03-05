@@ -14,5 +14,5 @@
 }
 
 .stack-lg > * + * {
-	margin-top: var( --stack-space, calc( 1em * var( --s-ratio ) * var( --s-ratio ) * var( --s-ratio ) ) );
+	margin-top: var( --page-margin );
 }

@@ -1,0 +1,14 @@
+{%- set critical -%}
+.project h2 {
+	font-size: clamp( var( --s1), 2.5vw, var( --s4 ) );
+	letter-spacing: -0.0125em;
+}
+.project :not(h2) {
+	font-family: var( --font-sans );
+	font-size: clamp( var( --s0), 2.5vw, var( --s2 ) );
+	line-height: 1.4;
+}
+.project a {
+	color: currentcolor;
+}
+{%- endset -%}

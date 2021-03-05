@@ -1,16 +1,22 @@
 {%- set critical -%}
 .header {
-	padding-left: var( --page-margin );
 	padding-right: var( --page-margin );
-	font-size: clamp( calc( var( --s1) + 0.1rem ), 5vw, var( --s4 ) );
+	padding-bottom: var( --page-margin );
+	padding-left: var( --page-margin );
 }
 
 .header-icon {
+	--theme-background: var( --theme-primary );
+	--theme-icon: var( --theme-secondary );
+
+	background-color: var( --theme-background );
+
 	box-sizing: content-box;
 	width: 1em;
 	margin-left: -0.5em;
 	padding-top: 1em;
-	padding-left: 0.5em;
 	padding-right: 0.5em;
+	padding-bottom: 0.25em;
+	padding-left: 0.5em;
 }
 {%- endset -%}

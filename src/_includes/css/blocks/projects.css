@@ -1,0 +1,6 @@
+{%- set critical -%}
+.projects {
+	padding-right: calc( var( --page-margin ) / var( --s-ratio ) );
+	padding-left: calc( var( --page-margin ) / var( --s-ratio ) );
+}
+{%- endset -%}

@@ -1,0 +1,9 @@
+{%- set critical -%}
+.page h1 {
+	color: var( --theme-heading );
+}
+
+.page-header {
+	padding-top: 0;
+}
+{% endset %}
