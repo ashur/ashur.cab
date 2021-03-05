@@ -8,4 +8,4 @@ theme:
 ---
 Beyoncé’s discography organized neatly.
 
-Made as an exercise in learning more about responsive layout using CSS Grid and drawing with CSS.
+An exercise in learning more about responsive layout using CSS Grid and drawing with CSS.

@@ -6,6 +6,6 @@ theme:
   text: "#ebf4ff"
   background: "#3c366b"
 ---
-720 individual pages and a whole lot of CSS gradients join forces to make one [terribly inefficient timepiece](https://multiline.co/mment/2020/09/eleventy-clock/).
+A template for building a simple blog with [Eleventy](https://11ty.dev) and [Portway](https://getportway.com).
 
-Built as a study in [Eleventy Pagination](https://11ty.dev/docs/pagination) and drawing with CSS.
+Features include responsive layout, an automatically generated RSS feed, pinned posts, simple theming, and automatic link unfurls.

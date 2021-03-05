@@ -6,4 +6,6 @@ theme:
   text: "#fffbeb"
   background: "#dc2626"
 ---
-A template for building a simple blog with [Eleventy](https://11ty.dev) and [Portway](https://getportway.com) that features responsive layout, RSS, pinned posts, simple theming, and automatic link unfurls.
+720 individual pages and a whole lot of CSS gradients join forces to make one [terribly inefficient timepiece](https://multiline.co/mment/2020/09/eleventy-clock/).
+
+Built as a study in [Eleventy Pagination](https://11ty.dev/docs/pagination) and drawing with CSS.
