@@ -24,7 +24,7 @@ function getSize( dirName, token )
 
 function replaceToken( token, size )
 {
-	let filePath = "./dist/index.html";
+	let filePath = "./dist/rera/index.html";
 
 	try
 	{
