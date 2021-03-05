@@ -3,10 +3,10 @@ name: Eleventy Clock
 url: https://eleventy-clock.netlify.app
 order: 3
 theme:
-  text: "#fffbeb"
-  background: "#dc2626"
-  corner: "#f48e09"
-  icon: "#fcce30"
+  text: "var( --color-black )"
+  background: "#fffff0"
+  corner: "#319795"
+  icon: "#f56565"
 ---
 720 individual pages and a whole lot of CSS gradients join forces to make one [terribly inefficient timepiece](https://multiline.co/mment/2020/09/eleventy-clock/).
 
