@@ -4,23 +4,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ site.title }}{% endset -%}
-	{%- set pageDescription %}The personal website of Ashur Cabrera{% endset -%}
-	<title>{{ pageTitle }}</title>
+	<title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
 
-	<title>{{ pageTitle }}</title>
-	<meta name="title" content="{{ pageTitle }}">
+	{%- set metaTitle %}{% if title %}{{ title }} | ashur.cab/rera{% endif %}ashur.cab/rera{% endset -%}
+	{%- set pageDescription %}The personal website of Ashur Cabrera{% endset -%}
+
+	<meta name="title" content="{{ metaTitle }}">
 	<meta name="description" content="{{ pageDescription }}">
 
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-	<meta property="og:title" content="{{ pageTitle }}">
+	<meta property="og:title" content="{{ metaTitle }}">
 	<meta property="og:description" content="{{ pageDescription }}">
 	<meta property="og:image" content="{{ site.url }}/images/social.png">
 
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-	<meta property="twitter:title" content="{{ pageTitle }}">
+	<meta property="twitter:title" content="{{ metaTitle }}">
 	<meta property="twitter:description" content="{{ pageDescription }}">
 	<meta property="twitter:image" content="{{ site.url }}/images/social.png">
 
