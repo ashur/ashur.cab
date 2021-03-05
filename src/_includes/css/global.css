@@ -45,6 +45,7 @@ body * {
 
 a {
 	color: currentcolor;
+	font-size: inherit;
 }
 a:hover {
 	color: var( --theme-primary );

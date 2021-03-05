@@ -6,19 +6,6 @@ critical:
   - css/blocks/page.css
   - css/blocks/project.css
   - css/blocks/projects.css
-tokens:
-  themes:
-    eps:
-      primary: "#ebf4ff"
-      secondary: "#3c366b"
-      tertiary: "#ebf4ff"
-    beyonce:
-      primary: "#fbb6ce"
-      secondary: "black"
-      tertiary: "#fbb6ce"
-    11ty:
-      primary: "#b2f5ea"
-      secondary: "var( --color-black )"
 ---
 <main class="[][][ page ]">
 	<section class="[][][]">
@@ -29,22 +16,16 @@ tokens:
 		</div>
 
 		<div class="[ stack ][][ projects ]">
-			<div class="[ box center stack ][ measure theme-eps ][ project ]">
-				<h2>Eleventy Portway Starter</h2>
-				<p>A template for building a simple blog with <a href="https://11ty.dev">Eleventy</a> and <a href="https://getportway.com">Portway</a></p>
-			</div>
-	
-			<div class="[ box center stack ][ measure theme-beyonce ][ project ]">
-				<h2>Beyonce Knolls</h2>
-				<p>Beyoncé’s discography organized neatly.</p>
-				<p>Made as an exercise in learning more about responsive layout using CSS Grid and drawing with CSS.</p>
-			</div>
-	
-			<div class="[ box center stack ][ measure theme-11ty theme-inverse ][ project ]">
-				<h2>Eleventy Clock</h2>
-				<p>720 individual pages and a whole lot of CSS gradients join forces to make one terribly inefficient timepiece.</p>
-				<p>Built as a study in <a href="https://11ty.dev/docs/pagination">Eleventy Pagination</a> and drawing with CSS.</p>
-			</div>
+			{% for project in collections.projects | sort( false, false, "data.order" ) %}
+				<div
+					class="[ box center stack ][ measure themed ][ project ]"
+					style="--theme-text: {{ project.data.theme.text }}; --theme-background: {{ project.data.theme.background }}; --theme-icon: {{ project.data.theme.text }}; "
+				>
+					<h2><a href="{{ project.data.url }}">{{ project.data.name }}</a></h2>
+					{{ project.templateContent | safe }}
+					<p><a href="{{ project.data.url }}" aria-label="{{ project.data.name }}">{% svgmin %}{% include "images/icon-link.svg" %}{% endsvgmin %}</a></p>
+				</div>
+			{% endfor %}
 		</div>
 	</section>
 </main>
