@@ -29,8 +29,8 @@
 	line-height: 1.4;
 }
 	.project a:hover {
-		--theme-icon: var( --color-white );
-		color: var( --color-white );
+		--theme-icon: var( --theme-text );
+		color: var( --theme-corner );
 	}
 
 .project svg {
