@@ -8,4 +8,4 @@ theme:
 ---
 A template for building a simple blog with [Eleventy](https://11ty.dev) and [Portway](https://getportway.com).
 
-Features include responsive layout, an automatically generated RSS feed, pinned posts, simple theming, and automatic link unfurls.
+Features include pinned posts, simple theming, responsive layout, a built-in RSS feed, and automatic link unfurls.
