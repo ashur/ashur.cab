@@ -1,12 +1,12 @@
 @font-face {
 	font-family: "tiempos";
-	src: url( "/fonts/tiempos-headline-test-bold.woff" );
+	src: url( "/fonts/tiempos-headline-web-bold-subset.woff" );
 	font-weight: 600;
 	font-display: swap;
 }
 @font-face {
 	font-family: "soehne";
-	src: url( "/fonts/soehne-test-buch.woff" );
+	src: url( "/fonts/soehne-web-buch-subset.woff" );
 	font-display: swap;
 	font-weight: 400;
 }
