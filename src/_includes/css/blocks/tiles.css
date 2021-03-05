@@ -1,5 +1,0 @@
-{% set critical %}
-.tiles > * {
-	min-height: 25vh;
-}
-{% endset %}
