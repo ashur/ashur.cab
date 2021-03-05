@@ -18,13 +18,18 @@
 	font-size: clamp( var( --s0 ), 2.5vw, var( --s2 ) );
 }
 .footer p {
+	max-width: 40ch;
 	font-family: var( --font-sans );
 	font-size: clamp( var( --s0 ), 2.5vw, var( --s1 ) );
+	line-height: 1.5;
 }
 .footer svg {
 	--size: clamp( 1em, 2.5vw, var( --s0 ) );
 
 	width: var( --size );
 	margin-right: calc( var( --size ) / 8 );
+}
+.footer a:hover {
+	color: var( --theme-light );
 }
 {%- endset -%}
