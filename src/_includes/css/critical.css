@@ -13,5 +13,5 @@
 {%- for path in blocks -%}
 	{%- import path as stylesheet -%}
 	{{- stylesheet.critical | safe -}}
-	{{ ("Added " + path + " to critical CSS") | log }}
+	{# ("Added " + path + " to critical CSS") | log #}
 {%- endfor -%}
