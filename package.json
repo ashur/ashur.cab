@@ -5,7 +5,6 @@
   "author": "Ashur Cabrera",
   "scripts": {
     "build": "eleventy",
-    "postbuild": "node scripts/post-build.js",
     "clean": "rm -rf ./dist",
     "serve": "concurrently 'serve ./dist' npm:watch",
     "watch": "onchange -ik 'src/**/*.*' -- npm run build"

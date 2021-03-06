@@ -1,6 +1,7 @@
 const CleanCSS = require( "clean-css" );
 const markdownIt = require( "markdown-it" );
 const {optimize} = require( "svgo" );
+const {replaceSize} = require( "./scripts/post-build" );
 
 module.exports = config =>
 {
@@ -50,11 +51,11 @@ module.exports = config =>
 
 	config.setLibrary( "md", md );
 
-	return {
+	/* Eleventy options */
+	let options = {
 		dir: {
 			input: "src",
 			output: "dist",
-
 		},
 
 		htmlTemplateEngine: "njk",
@@ -62,4 +63,13 @@ module.exports = config =>
 
 		templateFormats: ["css", "md", "njk"],
 	};
+
+	/* Events */
+	config.on( "afterBuild", () =>
+	{
+		let size = replaceSize( options.dir.output, "{size}" );
+		console.log( `ℹ️  Site size: ${size}` );
+	});
+
+	return options;
 };

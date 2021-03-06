@@ -1,9 +1,13 @@
 const fs = require( "fs" );
 const fsUtils = require( "nodejs-fs-utils" );
 
-function getSize( dirName, token )
+/**
+ * @param {string} outputDir
+ * @param {string} token - ex., "{size}"
+ */
+function getSize( outputDir, token )
 {
-	let originalSize = fsUtils.fsizeSync( dirName );
+	let originalSize = fsUtils.fsizeSync( outputDir );
 	let finalSize = originalSize - token.length + "1023-abcdbyte".length;
 
 	let i = 0;
@@ -22,9 +26,14 @@ function getSize( dirName, token )
 	return `${ Math.floor( finalSize ) }-${ suffixes[i] }`;
 }
 
-function replaceToken( token, size )
+/**
+ * @param {string} outputDir
+ * @param {string} token - ex., "{size}"
+ * @param {string} size
+ */
+function replaceToken( outputDir, token, size )
 {
-	let filePath = "./dist/rera/index.html";
+	let filePath = `${outputDir}/rera/index.html`;
 
 	try
 	{
@@ -42,6 +51,15 @@ function replaceToken( token, size )
 	}
 }
 
-let token = "{size}";
-let finalSize = getSize( "./dist", token );
-replaceToken( token, finalSize );
+/**
+ * @param {string} outputDir
+ * @param {string} token
+ * @returns {string}
+ */
+module.exports.replaceSize = (outputDir, token) =>
+{
+	let finalSize = getSize( outputDir, token );
+	replaceToken( outputDir, token, finalSize );
+
+	return finalSize;
+};
