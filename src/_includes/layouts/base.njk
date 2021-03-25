@@ -44,6 +44,9 @@
 		{{ css | cssmin | safe }}
 	</style>
 
+	<link rel="preload" href="https://assets.ashur.cab/v2/fonts/tiempos-headline-web-bold-subset.woff" as="font" type="font/woff" crossorigin>
+	<link href="https://assets.ashur.cab/v2/fonts/soehne-web-buch-subset.woff" as="font" type="font/woff" crossorigin>
+
 	{%- if external %}
 		{%- for path in external -%}
 	<link rel="stylesheet" href="/css/{{ path }}" media="print" onload="this.media='all'">
