@@ -3,3 +3,9 @@
   to = "/rera"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/noun-collective/*"
+  to = "https://v1.ashur.cab/rera/noun-collective/:splat"
+  status = 302
+  force = true
