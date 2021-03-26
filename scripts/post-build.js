@@ -8,7 +8,15 @@ const fsUtils = require( "nodejs-fs-utils" );
 function getSize( outputDir, token )
 {
 	let originalSize = fsUtils.fsizeSync( outputDir );
-	let finalSize = originalSize - token.length + "1023-abcdbyte".length;
+
+	let assetsSize = 0;
+	if( process.env.NODE_ENV === "production" )
+	{
+		const assetsSizes = require( "../external/assets-sizes" );
+		assetsSize = assetsSizes.total || assetsSize;
+	}
+
+	let finalSize = originalSize + assetsSize - token.length + "1023-abcdbyte".length;
 
 	let i = 0;
 	while( finalSize / 1024 > 1 )

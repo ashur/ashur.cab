@@ -4,6 +4,7 @@
   "description": "",
   "author": "Ashur Cabrera",
   "scripts": {
+    "prebuild": "scripts/pre-build.sh",
     "build": "eleventy",
     "clean": "rm -rf ./dist",
     "serve": "concurrently 'serve ./dist' npm:watch",
