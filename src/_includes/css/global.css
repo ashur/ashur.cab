@@ -29,10 +29,13 @@
 	--theme-{{ theme }}-secondary: {{ tokens.themes[theme].secondary }};
 	--theme-{{ theme }}-tertiary: {{ tokens.themes[theme].tertiary }};
 	--theme-{{ theme }}-light: {{ tokens.themes[theme].light }};
+	--theme-{{ theme }}-dark: {{ tokens.themes[theme].dark }};
 	{%- endfor %}
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	color: var( --theme-text );
 	font-family: var( --font-body );
 }

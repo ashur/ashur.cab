@@ -1,0 +1,4 @@
+{
+	"layout": "layouts/page.njk",
+	"permalink": "/rera/{{ page.filePathStem | replace ('/pages', '') }}/index.html"
+}

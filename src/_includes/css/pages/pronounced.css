@@ -1,0 +1,7 @@
+.button-pronounce:hover {
+	cursor: pointer;
+}
+.button-pronounce.playing {
+	--theme-icon-content: var( --color-white );
+	--theme-icon: #10b981;
+}
