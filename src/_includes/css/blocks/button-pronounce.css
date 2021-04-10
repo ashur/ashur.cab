@@ -1,21 +1,17 @@
 {%- set critical -%}
 .button-pronounce {
-	--theme-icon: #111827;
-	--theme-icon-content: #6ee7b7;
-
 	border: none;
 	background: none;
 	padding: 0;
 	height: 1em;
-
-	transition: transform 0.125s ease;
+	color: var( --theme-accent );
 }
 .button-pronounce:hover {
 	cursor: pointer;
 }
 .button-pronounce.playing {
-	--theme-icon-content: var( --color-white );
-	--theme-icon: #10b981;
+	--theme-icon: var( --theme-primary );
+	--theme-icon-contents: var( --color-white );
 }
 
 .button-pronounce > * {
