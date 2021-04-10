@@ -1,0 +1,38 @@
+.theme-site {
+	--theme-background: var( --color-yellow );
+	--theme-text: var( --color-black );
+	--theme-footer-heading: var( --color-yellow );
+	--theme-footer-text: var( --color-white );
+}
+
+.theme-projects {
+	--theme-background: var( --color-black );
+	--theme-text: var( --color-white );
+	--theme-icon: var( --color-green );
+	--theme-icon-background: var( --color-green );
+
+	--theme-footer-background: var( --color-green );
+}
+
+.theme-twitter {
+	--theme-background: var( --color-blue );
+	--theme-text: var( --color-white );
+	--theme-icon: var( --color-green );
+}
+
+.theme-blog {
+	--theme-background: var( --color-white );
+	--theme-text: var( --color-black );
+	--theme-icon: var( --color-red );
+}
+
+.theme-pronounced {
+	--theme-background: var( --color-black );
+	--theme-icon-background: var( --color-yellow );
+	--theme-icon: var( --color-yellow );
+	--theme-text: var( --color-white );
+
+	--theme-footer-background: var( --color-yellow );
+
+	--theme-accent: var( --color-yellow );
+}
