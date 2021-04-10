@@ -3,6 +3,7 @@
 {% include "css/global.css" %}
 {% include "css/composition.css" %}
 {% include "css/utilities.css" %}
+{% include "css/themes.css" %}
 
 /* Blocks */
 {% set blocks = [

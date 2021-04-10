@@ -4,9 +4,15 @@
 }
 
 .footer {
-	--theme-background: var( --color-black );
-	--theme-text: var( --color-white );
-	--theme-icon: var( --theme-light );
+	background-color: var(
+		--theme-footer-background,
+		var( --theme-text )
+	);
+
+	color: var(
+		--theme-footer-text,
+		var( --theme-background )
+	);
 
 	--stack-space: var( --s0 );
 	flex-shrink: 0;
@@ -14,7 +20,7 @@
 
 .footer h2 {
 	max-width: 20ch;
-	color: var( --theme-light );
+	color: var( --theme-footer-heading );
 	font-size: clamp( var( --s0 ), 2.5vw, var( --s2 ) );
 }
 .footer p {
@@ -28,6 +34,12 @@
 
 	width: var( --size );
 	margin-right: calc( var( --size ) / 8 );
+}
+.footer a {
+	color: var(
+		--theme-footer-text,
+		var( --theme-background )
+	);
 }
 .footer a:hover {
 	color: var( --theme-light );

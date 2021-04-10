@@ -1,20 +1,3 @@
-{%- for theme in tokens.themes | keys %}
-.theme-{{ theme }} {
-	--theme-primary: var( --theme-{{ theme }}-primary );
-	--theme-secondary: var( --theme-{{ theme }}-secondary );
-	--theme-tertiary: var( --theme-{{ theme }}-tertiary );
-	--theme-light: var( --theme-{{ theme }}-light );
-
-	--theme-heading: var( --theme-primary );
-	--theme-background: var( --theme-secondary );
-	--theme-text: var( --theme-tertiary, var( --theme-primary ) );
-	--theme-icon: var( --theme-tertiary );
-
-	background-color: var( --theme-background );
-	color: var( --theme-text );
-}
-{%- endfor %}
-
 .theme-inverse {
 	--theme-background: var( --theme-primary );
 	--theme-text: var( --theme-secondary );
@@ -26,6 +9,9 @@
 	background-color: var( --theme-background );
 	color: var( --theme-text );
 }
+	.themed a {
+		color: var( --theme-link );
+	}
 
 .grid {
 	display: grid;

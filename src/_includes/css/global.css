@@ -23,14 +23,6 @@
 	{%- for key in tokens.colors | keys %}
 	--color-{{ key }}: {{ tokens.colors[key] }};
 	{%- endfor %}
-
-	{%- for theme in tokens.themes | keys %}
-	--theme-{{ theme }}-primary: {{ tokens.themes[theme].primary }};
-	--theme-{{ theme }}-secondary: {{ tokens.themes[theme].secondary }};
-	--theme-{{ theme }}-tertiary: {{ tokens.themes[theme].tertiary }};
-	--theme-{{ theme }}-light: {{ tokens.themes[theme].light }};
-	--theme-{{ theme }}-dark: {{ tokens.themes[theme].dark }};
-	{%- endfor %}
 }
 
 body {

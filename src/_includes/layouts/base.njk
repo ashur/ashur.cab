@@ -53,7 +53,7 @@
 		{%- endfor %}
 	{%- endif %}
 </head>
-<body class="[][ theme-{{ theme if theme else "site" }} ][]">
+<body class="[][ themed theme-{{ theme if theme else "site" }} ][]">
 	{% include "components/header.njk" %}
 
 	{{ content | safe }}

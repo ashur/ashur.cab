@@ -1,7 +1,5 @@
 {% set critical %}
 .tile {
-	--theme-text: var( --theme-heading );
-
 	min-height: calc( (100vh - var( --s2 )) / 4 );
 	padding: clamp( var( --s2 ), 10vw, var( --s6 ) );
 	font-weight: 700;

@@ -6,10 +6,7 @@
 }
 
 .header-icon {
-	--theme-background: var( --theme-primary );
-	--theme-icon: var( --theme-secondary );
-
-	background-color: var( --theme-background );
+	--theme-icon: var( --theme-background );
 
 	box-sizing: content-box;
 	width: 1em;
@@ -18,5 +15,7 @@
 	padding-right: 0.5em;
 	padding-bottom: 0.25em;
 	padding-left: 0.5em;
+
+	background-color: var( --theme-icon-background, var( --theme-text ) );
 }
 {%- endset -%}
