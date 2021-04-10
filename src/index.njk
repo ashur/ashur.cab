@@ -10,18 +10,21 @@ permalink: /rera/index.html
     <div class="[][][ tile ]">
 		<div class="[ center stack ][ measure ][]">
 			<h1>
-				Hello! My name is <a href="/rera/is/pronounced">Ashur</a> Cabrera, and this {size} pile of electrons is my website.
+				Howdy! My name is <a href="/rera/is/pronounced">Ashur</a>, and this {size} pile of electrons is my website.
 			</h1>
 		</div>
     </div>
 
 	{% for section in collections.home | sort( false, false, "data.order" ) %}
-	<div class="[][ theme-{{ section.data.theme }} ][ tile ]">
+	<article
+		id="{{ section.template.fileSlugStr }}"
+		class="[][ theme-{{ section.data.theme }} themed ][ tile ]"
+	>
 		<div class="[ center stack ][ measure ][]">
 			{{ section.templateContent | safe }}
-	
+
 			{% svgmin %}{% include ("images/icon-" + section.data.icon + ".svg") %}{% endsvgmin %}
 		</div>
-	</div>
+	</article>
 	{% endfor %}
 </main>
