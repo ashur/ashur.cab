@@ -22,7 +22,7 @@ module.exports = [
 	{
 		path: "src/_includes/images/icon-pronounce-button.svg",
 		source: "https://thenounproject.com/icon/3547788/",
-		purchased: false,
+		purchased: true,
 	},
 	{
 		path: "src/_includes/images/icon-terminal.svg",
