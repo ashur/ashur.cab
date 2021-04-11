@@ -5,10 +5,12 @@
   "author": "Ashur Cabrera",
   "scripts": {
     "prebuild": "scripts/pre-build.sh",
-    "build": "eleventy",
+    "build:dev": "eleventy",
+    "build": "npm run test && npx eleventy",
     "clean": "rm -rf ./dist",
     "serve": "concurrently 'serve ./dist' npm:watch",
-    "watch": "onchange -ik 'src/**/*.*' -- npm run build"
+    "test": "mocha test/",
+    "watch": "onchange -ik 'src/**/*.*' -- npm run build:dev"
   },
   "license": "ISC",
   "dependencies": {
